@@ -380,7 +380,12 @@ td img {
     border-radius: 50%;
     object-fit:contain;
     margin-bottom: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
 }
+
+
 
 /* -------------- 4. FRANQUIAS -------------- */
 /* -------------- 4.1 LAYOUT GERAL -------------- */
@@ -398,7 +403,7 @@ td img {
 }
 
 .team-nav-logo {
-    height: 100px;
+    height: 70px;
     margin: 0 20px;
     object-fit: contain;
 }
@@ -762,7 +767,7 @@ td img {
 
 .game-info {
     flex-grow: 1;
-    padding: 25px 20px 15px 20px;
+    padding: 50px 20px 15px 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -788,14 +793,16 @@ td img {
     align-items: center;
     font-family: 'Blockletter', sans-serif;
     font-size: 2.5rem;
-    line-height: 1;
+    line-height: 1.2;
 }
 .team-logo {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     margin-right: 15px;
     border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 .team-score {
@@ -871,7 +878,8 @@ td img {
 }
 
 .featured-news .news-image-wrapper {
-    height: 775px
+    height: 775px;
+    width: 1020px;
 }
 
 .featured-news .news-headline {
@@ -894,7 +902,8 @@ td img {
 }
 
 .secondary-news .news-image-wrapper {
-    height: 300px;
+    height: 312px;
+    width: 540px;
 }
 
 .secondary-news .news-headline {
