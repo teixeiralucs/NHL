@@ -1035,9 +1035,13 @@ td img {
     font-size: 1rem;
 }
 
-.standings-table .col-rank,
+
 .standings-table .col-team {
     text-align: left;
+}
+
+.standings-table .col-rank {
+    text-align: center;
 }
 
 .standings-table .col-team {
