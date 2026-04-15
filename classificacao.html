@@ -17,7 +17,6 @@
             </a>
             <img src="/img/logo.png" alt="Logo da NHL" class="nhl-logo">
             <a href="/classificacao.html" class="active">CLASSIFICAÇÃO</a>
-            <a href="/sobre.html">SOBRE</a>
         </nav>
     </header>
 
@@ -25,12 +24,11 @@
         <div class="sub-nav">
             <a href="/iframes/wildcard.html" target="tabelas-frame" class="active">WILD CARD</a>
             <a href="/iframes/division.html" target="tabelas-frame">DIVISÃO</a>
-            <a href="/iframes/conference.html" target="tabelas-frame">CONFRERÊNCIA</a>
-            <a href="/iframes/league.html">LIGA</a>
+            <a href="/iframes/conference.html" target="tabelas-frame">CONFERÊNCIA</a>
+            <a href="/iframes/league.html" target="tabelas-frame">LIGA</a>
         </div>
 
         <iframe src="/iframes/wildcard.html" name="tabelas-frame" class="standings-iframe"></iframe>
-        <iframe src="/iframes/division.html" name="tabelas-frame" class="standings-iframe"></iframe>
 
         <div class="legend-section">
             <h2 class="legend-title">
@@ -148,7 +146,19 @@
             </div>
         </div>
     </main>
-</body>>
+    <script>
+        document.addEventListener('DOMContentLoaded',() => {
+            const subNavLinks = document.querySelectorAll('.sub-nav a');
+            
+            subNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    subNavLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active')
+                });
+            });
+        });
+    </script>
+</body>
     
 </body>
 </html>
