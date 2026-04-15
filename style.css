@@ -936,3 +936,149 @@ td img {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* -------------- 8. CLASSIFICAÇÃO -------------- */
+/* -------------- 8.1 NAV SUPERIOR -------------- */
+.page-classificacao {
+    overflow-y: auto;
+}
+
+.page-classificacao nav a {
+    color: #000;
+}
+
+.page-classificacao header nav a.active {
+    text-decoration-color: #000;
+}
+
+.standings-container {
+    max-width: 1700px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 60px;
+    display: block;
+}
+
+/* -------------- 8.2 NAV DAS CLASSIFICAÇÕES -------------- */
+
+.sub-nav {
+    display: flex;
+    gap: 40px;
+    border-bottom: 2px solid #646464;
+    margin-bottom: 40px;
+}
+.sub-nav a {
+    font-family:  'Blockletter', sans-serif;
+    font-size: 2.2rem;
+    color: #646464;
+    text-decoration: none;
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.sub-nav a:hover {
+    color: #a09e9e
+}
+
+.sub-nav a.active {
+    color: #000;
+    border-bottom: 4px solid #000;
+}
+
+/* -------------- 8.3 IFRAME -------------- */
+
+.standings-iframe {
+    width: 100%;
+    height: 1200px;
+    border: none;
+}
+.iframe-body {
+    background-color: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.conference-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.division-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+/* -------------- 8.3.1 TABELAS -------------- */
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.standings-table th {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.standings-table td {
+    padding: 12px 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.standings-table .col-rank,
+.standings-table .col-team {
+    text-align: left;
+}
+
+.standings-table .col-team {
+    width: 25%;
+}
+
+.standings-table tbody tr:nth-child(odd) {
+    background-color: #d9d9d9;
+}
+
+.standings-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.diff-positive {
+    color: #00b300
+}
+
+.standings-clingged {
+    background-color: #c0bfbf;
+    padding: 0px 3px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+.table-team-name {
+    transform: translateY(-2px);
+}
+/* -------------- 8.3.2 LOGOS NA TABELA -------------- */
+.standings-team-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-team-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
