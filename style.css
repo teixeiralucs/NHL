@@ -952,7 +952,6 @@ td img {
 }
 
 .standings-container {
-    max-width: 1700px;
     width: 95%;
     margin: 0 auto;
     padding: 40px 60px;
@@ -989,7 +988,7 @@ td img {
 
 .standings-iframe {
     width: 100%;
-    height: 1900px;
+    height: 2770px;
     border: none;
 }
 .iframe-body {
@@ -1004,6 +1003,16 @@ td img {
     font-weight: 900;
     margin-bottom: 30px;
     letter-spacing: 1px;
+}
+
+.conference-title-west {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
 }
 
 .division-title {
@@ -1063,7 +1072,7 @@ td img {
 .diff-negative {
     color: #d41212;
 }
-.standings-clingged {
+.standings-clinched {
     background-color: #c0bfbf;
     padding: 0px 3px;
     border-radius: 3px;
@@ -1089,3 +1098,35 @@ td img {
     flex-shrink: 0;
 }
 
+/* -------------- 8.4 LEGENDA -------------- */
+.legend-section {
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 2px solid #e6e6e6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.legend-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.legend-col p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.legend-col strong {
+    color: #000;
+    font-weight: bold;
+}
