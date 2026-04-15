@@ -57,7 +57,7 @@
                     - Vaga nos Playoffs Garantida via Conferência
                 </p>
                 <p><strong>
-                        Z
+                        E
                     </strong>
                     - Eliminado dos Playoffs
                 </p>
@@ -156,6 +156,14 @@
                     this.classList.add('active')
                 });
             });
+
+            const iframe = document.querySelector('.standings-iframe');
+            iframe.addEventListener('load', function() {
+                iframe.style.height = '500px'
+                const alturaDoConteudo = iframe.contentWindow.document.body.scrollHeight;
+
+                iframe.style.height = (alturaDoConteudo + 30) + 'px';
+            })
         });
     </script>
 </body>
