@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHL Brasil</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Home
+    </title>
 </head>
 <body>
-    <div id="landing-page" class="landing-container">
-        <button class="landing-content" id="landing-trigger" aria-label="Entrar no NHL Brasil" title="Clique para continuar">
-            <img src="/img/logo.png" alt="Logo da NHL" class="landing-logo">
-            <p class="landing-text">Clique na logo da NHL<br>para continuar</p>
-        </button>
-        <div id="expansion-circle" class="expansion-circle" aria-hidden="true"></div>
+    <div class="slideshow-background">
+        <div class="slide" style="background-image: url(/img/background/sjs-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/mtl-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/chi-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/det-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/edm-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/nsh-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/nyi-1.png);"></div>
+        <div class="slide" style="background-image: url(/img/background/wsh-1.png);"></div>
+    </div>
+    <div class="content-overlay">
+        <header>
+            <nav>
+                <a href="index.html" class="active">
+                    HOME
+                </a>
+                <a href="franquias.html">
+                    FRANQUIAS
+                </a>
+
+                <img src="/img/logo.png" alt="Logo da NHL" class="nhl-logo">
+
+                <a href="classificacao.html">
+                    CLASSIFICAÇÃO
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <h1>
+                    BEM VINDO A NHL BRASIL
+                </h1>
+                <p>
+                    Portal dedicado à compartilhar noticias sobre o mundo da NHL no Brasil. Acompanhe seu time favorito e não perca um lance da maior competição de hockey no gelo do planeta.
+                </p>
+            </section>
+        </main>
+
     </div>
 
-    <script src="/script.js"></script>
 </body>
 </html>
